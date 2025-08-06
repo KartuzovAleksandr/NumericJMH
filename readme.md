@@ -71,12 +71,12 @@
    - Сохраняет результаты в файл `results.json` в формате JSON
    - Использует параметры JMH: 1 прогревочная итерация, 3 измеряемые итерации, режим `AverageTime`, единицы измерения — миллисекунды
 
-8. **py.java**  
+_8. **py.java**  
    Класс для визуализации результатов бенчмаркинга.
    - Читает данные из `benchmark-results.csv`.
    - Создаёт гистограмму с помощью JFreeChart, отображая время выполнения для каждой реализации и категории задач.
    - Группирует результаты по категориям (`3or5`, `Prime`, `Average`, `Same`) и реализациям (`Array`, `Collection`, `PStream`, `CF`, `FJ`).
-   - Использует разные цвета для каждой реализации и оптимизирует отображение с помощью поворота подписей и настройки отступов.
+   - Использует разные цвета для каждой реализации и оптимизирует отображение с помощью поворота подписей и настройки отступов._
 
 ## Требования
 
@@ -101,27 +101,27 @@
 
 Ниже представлена таблица с результатами на 1000000 чисел (от 1 до 1000):
 
-Benchmark                                 (size)  Mode  Cnt   Score     Error  Units
-BenchmarkNumeric.averageArray            1000000  avgt    3   0,676 ±   0,670  ms/op
-BenchmarkNumeric.averageCF               1000000  avgt    3   5,739 ±   4,040  ms/op
-BenchmarkNumeric.averageCollection       1000000  avgt    3   2,460 ±   0,108  ms/op
-BenchmarkNumeric.averageFJ               1000000  avgt    3   1,052 ±   1,211  ms/op
-BenchmarkNumeric.averagePStream          1000000  avgt    3   1,128 ±   0,897  ms/op
-BenchmarkNumeric.dividers3or5Array       1000000  avgt    3   6,596 ±   3,264  ms/op
-BenchmarkNumeric.dividers3or5CF          1000000  avgt    3  14,755 ±  10,505  ms/op
-BenchmarkNumeric.dividers3or5Collection  1000000  avgt    3  34,745 ± 193,212  ms/op
-BenchmarkNumeric.dividers3or5FJ          1000000  avgt    3   9,767 ±  14,761  ms/op
-BenchmarkNumeric.dividers3or5PStream     1000000  avgt    3   6,919 ±  17,310  ms/op
-BenchmarkNumeric.primeArray              1000000  avgt    3  16,342 ±  26,899  ms/op
-BenchmarkNumeric.primeCF                 1000000  avgt    3  18,745 ±   8,374  ms/op
-BenchmarkNumeric.primeCollection         1000000  avgt    3  45,072 ± 351,787  ms/op
-BenchmarkNumeric.primeFJ                 1000000  avgt    3   4,461 ±   2,687  ms/op
-BenchmarkNumeric.primePStream            1000000  avgt    3   4,394 ±   3,885  ms/op
-BenchmarkNumeric.sameArray               1000000  avgt    3  38,619 ±  34,245  ms/op
-BenchmarkNumeric.sameCF                  1000000  avgt    3  21,212 ±  20,332  ms/op
-BenchmarkNumeric.sameCollection          1000000  avgt    3  19,442 ±  31,043  ms/op
-BenchmarkNumeric.sameFJ                  1000000  avgt    3   8,257 ±   1,853  ms/op
-BenchmarkNumeric.samePStream             1000000  avgt    3   7,365 ±   5,293  ms/op
+* Benchmark                                 (size)  Mode  Cnt   Score     Error  Units
+* BenchmarkNumeric.averageArray            1000000  avgt    3   0,676 ±   0,670  ms/op
+* BenchmarkNumeric.averageCF               1000000  avgt    3   5,739 ±   4,040  ms/op
+* BenchmarkNumeric.averageCollection       1000000  avgt    3   2,460 ±   0,108  ms/op
+* BenchmarkNumeric.averageFJ               1000000  avgt    3   1,052 ±   1,211  ms/op
+* BenchmarkNumeric.averagePStream          1000000  avgt    3   1,128 ±   0,897  ms/op
+* BenchmarkNumeric.dividers3or5Array       1000000  avgt    3   6,596 ±   3,264  ms/op
+* BenchmarkNumeric.dividers3or5CF          1000000  avgt    3  14,755 ±  10,505  ms/op
+* BenchmarkNumeric.dividers3or5Collection  1000000  avgt    3  34,745 ± 193,212  ms/op
+* BenchmarkNumeric.dividers3or5FJ          1000000  avgt    3   9,767 ±  14,761  ms/op
+* BenchmarkNumeric.dividers3or5PStream     1000000  avgt    3   6,919 ±  17,310  ms/op
+* BenchmarkNumeric.primeArray              1000000  avgt    3  16,342 ±  26,899  ms/op
+* BenchmarkNumeric.primeCF                 1000000  avgt    3  18,745 ±   8,374  ms/op
+* BenchmarkNumeric.primeCollection         1000000  avgt    3  45,072 ± 351,787  ms/op
+* BenchmarkNumeric.primeFJ                 1000000  avgt    3   4,461 ±   2,687  ms/op
+* BenchmarkNumeric.primePStream            1000000  avgt    3   4,394 ±   3,885  ms/op
+* BenchmarkNumeric.sameArray               1000000  avgt    3  38,619 ±  34,245  ms/op
+* BenchmarkNumeric.sameCF                  1000000  avgt    3  21,212 ±  20,332  ms/op
+* BenchmarkNumeric.sameCollection          1000000  avgt    3  19,442 ±  31,043  ms/op
+* BenchmarkNumeric.sameFJ                  1000000  avgt    3   8,257 ±   1,853  ms/op
+* BenchmarkNumeric.samePStream             1000000  avgt    3   7,365 ±   5,293  ms/op
 
 В виде гистограммы:
 
