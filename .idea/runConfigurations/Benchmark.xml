@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Benchmark" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="org.openjdk.jmh.Main" />
+    <module name="NumericTestJMH" />
+    <option name="PROGRAM_PARAMETERS" value="top.academy.BenchmarkNumeric -rf json -rff results.json -foe true" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
